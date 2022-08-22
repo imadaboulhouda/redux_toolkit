@@ -10,8 +10,8 @@ export default function TodoList() {
   return (
     <>
       <div>
-        {todos.map((data) => (
-          <TodoItem key={data.id} data={data} />
+        {todos.map((data, index) => (
+          <TodoItem key={index} data={data} />
         ))}
       </div>
       <div>
