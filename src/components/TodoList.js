@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import TodoForm from "./TodoForm";
 import TodoItem from "./TodoItem";
 
 export default function TodoList() {
   const todos = useSelector((selector) => selector.todo);
-  useEffect(() => {}, [todos]);
+
   console.log(todos);
   return (
     <>
